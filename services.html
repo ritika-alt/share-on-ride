@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0558/6413/1764/files/Rainbow_Logo_Design_29_1024x1024.jpg?v=1680141974"
+        alt="logo" class="logo">
+    </div>
+    <div>
+      <ul class="a">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ride.html">Ride</a></li>
+        <li><a href="search.html">Search</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-2">
+    <h1 style="color: black;">Our Services</h1>
+    <p>We help people going in the same direction connect and share rides. It's safe, cost-effective, and eco-friendly.
+    </p>
+
+    <div class="card-1">
+      <h2>🚗 Ride Sharing</h2>
+      <p>Share your ride with people heading the same way. Split travel costs and enjoy a more social journey.</p>
+    </div>
+
+    <div class="card-1">
+      <h2>📅 Schedule a Ride</h2>
+      <p>Plan ahead! Select your date, pickup point, and drop location easily with our scheduling system.</p>
+    </div>
+
+    <div class="card-1">
+      <h2>🧍 Gender Preference</h2>
+      <p>Choose to travel with riders of the same gender if you prefer, for comfort and peace of mind.</p>
+    </div>
+
+    <div class="card-1">
+      <h2>✅ Verified Profiles</h2>
+      <p>We ensure every user is verified to keep the community trustworthy and secure.</p>
+    </div>
+
+
+    <div class="card-1">
+      <h2>🌟 Why Use Our Platform?</h2>
+      <ol>
+        <li>💸 Save money on rides</li>
+        <li>🌍 Reduce carbon footprint</li>
+        <li>🧑‍🤝‍🧑 Meet new people safely</li>
+        <li>🔐 Reliable & verified users</li>
+      </ol>
+    </div>
+
+
+    <div class="card-1">
+      <h2>🛠 How It Works</h2>
+      <ol>
+        <li>Enter your trip details</li>
+        <li>Find and match with other riders</li>
+        <li>Connect and share the ride!</li>
+      </ol>
+    </div>
+    <a href="index.html" class="start-btn">Start Sharing a Ride</a>
+
+    <div class="ride-info">
+      <h2>Ride Info:</h2>
+      <p id="show-date"></p>
+      <p id="show-pickup"></p>
+      <p id="show-drop"></p>
+
+      <script>
+        document.getElementById("show-date").innerText = "Date: " + localStorage.getItem("date");
+        document.getElementById("show-pickup").innerText = "Pickup: " + localStorage.getItem("pickup");
+        document.getElementById("show-drop").innerText = "Drop: " + localStorage.getItem("drop");
+      </script>
+    </div>
+
+</body>
+<footer class="footer">
+  <div class="icons">
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-whatsapp"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+  </div>
+  <hr class="footer-hr">
+  <div class="boxes">
+    <div class="left-boxes">
+      <a href="services.html" class="box" id="services">Services</a>
+      <a href="about.html" class="box" id="about">About</a>
+      <a href="index.html" class="box" id="home">Home</a>
+    </div>
+    <div class="right-box">
+      <div class="form-box">
+        <h3>Connect with us</h3>
+        <input type="email" placeholder="Enter Email" class="email-box">
+        <textarea placeholder="Enter Message" class="message-box"></textarea>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<script src="Java.js">
+
+</script>
+
+</html>
